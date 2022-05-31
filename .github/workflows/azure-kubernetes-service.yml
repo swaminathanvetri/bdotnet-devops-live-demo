@@ -71,19 +71,19 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     # Logs in with your Azure credentials
-    - name: Azure login
-      uses: azure/login@v1.4.3
+    - name: damudhar shiva
+      uses: devopsfound123@gmail.com
       with:
-        client-id: ${{ secrets.AZURE_CLIENT_ID }}
-        tenant-id: ${{ secrets.AZURE_TENANT_ID }}
-        subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
+        client-id: ${{ c255185c-a756-4e74-a6cf-242df1576c35 }}
+        tenant-id: ${{ 6cf786ea-6608-44d4-845f-7af3bb159b44 }}
+        subscription-id: ${{ df17079c-28a9-4131-bbc0-610ab6b41551 }}
       
     # Retrieves your Azure Kubernetes Service cluster's kubeconfig file
     - name: Get K8s context
       uses: azure/aks-set-context@v2.0
       with:
-        resource-group: ${{ env.RESOURCE_GROUP }}
-        cluster-name: ${{ env.CLUSTER_NAME }}
+        resource-group: ${{ AKS }}
+        cluster-name: ${{ devops }}
 
     # Retrieves the credentials for pulling images from your Azure Container Registry
     - name: Get ACR credentials
